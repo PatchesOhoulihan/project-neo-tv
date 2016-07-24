@@ -1,0 +1,19 @@
+(() => {
+    const $ = document.querySelector.bind(document);
+    const $$ = document.querySelectorAll.bind(document);
+    
+    const init = () => {
+        
+        let tvTags = "";
+        
+        for(let i = 0; i < 18; i++){
+            for(let j = 19; j>=0; j--){
+                tvTags += '<img id="' + i + '-' + j + '" src="img/200.gif" alt="">' 
+            }
+        }
+        //console.log("TV Tags" + tvTags);
+        $('#site-wrapper').innerHTML = tvTags;
+    }
+    
+    init();
+})();
